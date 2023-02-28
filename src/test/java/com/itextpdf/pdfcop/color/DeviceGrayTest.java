@@ -53,7 +53,7 @@ public class DeviceGrayTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 g", true, new int[] {0}, "g" },
                 { "0 G", true, new int[] {1}, "G" },

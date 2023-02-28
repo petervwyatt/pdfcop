@@ -53,7 +53,7 @@ public class TextMoveToTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 0 Td", true, 0, 0, "Td" },
                 { "0 0 TD", true, 0, 0, "TD" },

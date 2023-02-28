@@ -52,7 +52,7 @@ public class TextMatrixTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "10 0 0 10 64.417 693.424 Tm", true, new float[] {10, 0, 0, 10, 64.417f, 693.424f}, "Tm" },
                 { "0 1 2 3 4 5 Tm", true, new float[] {0, 1, 2, 3, 4, 5}, "Tm" },

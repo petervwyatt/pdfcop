@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class PathPaintingTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "s", true, 1 },
                 { "S", true, 1 }

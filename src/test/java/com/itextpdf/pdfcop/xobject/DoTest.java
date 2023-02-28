@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class DoTest extends SingleOperandBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "/Test Do", true, "/Test", "Do" },
                 { "/Test /Test Do", false, "/Fail", "Do" },

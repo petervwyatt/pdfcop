@@ -52,7 +52,7 @@ public class ShowTextWithOffsetTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "[(A) 120 (W) 120 (A) 95 (Y again)] TJ", true, 2 },
                 { "[(AWAY again)] TJ", true, 2 }

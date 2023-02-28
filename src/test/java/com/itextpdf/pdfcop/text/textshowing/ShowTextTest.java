@@ -54,7 +54,7 @@ public class ShowTextTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "(Hello World) Tj", true, "(Hello World)", "Tj" },
                 { "<AABBCC001122> Tj", true, "<AABBCC001122>", "Tj" },

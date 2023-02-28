@@ -48,7 +48,7 @@ public class FunctionalTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "src/test/resources/pdfs/input.pdf", true },
                 { "src/test/resources/pdfs/outlook.pdf", true },

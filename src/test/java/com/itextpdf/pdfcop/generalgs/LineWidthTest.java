@@ -54,7 +54,7 @@ public class LineWidthTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 w", true, "0", "w" },
                 { "2 w", true, "2", "w" },

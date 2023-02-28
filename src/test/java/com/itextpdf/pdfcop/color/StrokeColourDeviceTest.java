@@ -53,7 +53,7 @@ public class StrokeColourDeviceTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 sc", true, new int[] {0}, "sc" },
                 { "0 1 SC", true, new int[] {0, 1}, "SC" },

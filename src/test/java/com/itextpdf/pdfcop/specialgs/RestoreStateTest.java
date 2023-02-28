@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class RestoreStateTest extends NoOperandBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "Q", true },
                 { "q", false }

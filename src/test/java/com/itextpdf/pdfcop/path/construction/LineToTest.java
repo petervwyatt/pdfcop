@@ -53,7 +53,7 @@ public class LineToTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 0 l", true, 0, 0, "l" },
                 { "-100 100 l", true, -100, 100, "l" },

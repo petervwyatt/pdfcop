@@ -52,7 +52,7 @@ public class CurveTo2Test {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 1 2 3 v", true, new int[] {0, 1, 2, 3}, "v" },
                 { "0 1 2 v", false, new int[] {0, 1, 2, 3}, "v" }

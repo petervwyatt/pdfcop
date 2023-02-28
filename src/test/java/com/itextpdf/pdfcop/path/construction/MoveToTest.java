@@ -54,7 +54,7 @@ public class MoveToTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 0 m", true, 0, 0, "m" },
                 { "-100 100 m", true, -100, 100, "m" },

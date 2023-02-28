@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class TextStateTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 Tc", true, 1},
                 { "0 Tc 0 Tr", true, 2},

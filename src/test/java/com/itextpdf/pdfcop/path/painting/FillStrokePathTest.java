@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class FillStrokePathTest extends NoOperandBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "B", true },
                 { "B*", true },

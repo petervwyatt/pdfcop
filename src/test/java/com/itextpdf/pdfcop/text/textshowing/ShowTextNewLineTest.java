@@ -53,7 +53,7 @@ public class ShowTextNewLineTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "(Hello World) '", true, "(Hello World)", "'" },
                 { "<AABBCC001122> '", true, "<AABBCC001122>", "'" },

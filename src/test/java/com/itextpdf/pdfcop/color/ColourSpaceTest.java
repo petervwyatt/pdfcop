@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class ColourSpaceTest extends SingleOperandBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "/CS1 CS", true, "/CS1", "CS" },
                 { "/CS1 cs", true, "/CS1", "cs" },

@@ -52,7 +52,7 @@ public class RectangleTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 1 2 3 re", true, new int[] {0, 1, 2, 3}, "re" },
                 { "0 1 2 re", false, new int[] {0, 1, 2, 3}, "re" }

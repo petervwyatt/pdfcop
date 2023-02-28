@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class PathConstructionTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "h", true, 1},
                 { "0 1 2 3 re h", true, 2},

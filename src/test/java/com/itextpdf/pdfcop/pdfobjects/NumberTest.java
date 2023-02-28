@@ -56,7 +56,7 @@ public class NumberTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0", true, 0 },
                 { "1111", true, 1111 },

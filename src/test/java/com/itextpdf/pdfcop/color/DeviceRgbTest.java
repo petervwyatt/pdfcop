@@ -55,7 +55,7 @@ public class DeviceRgbTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 1 0 RG", true, new float[] {0, 1, 0}, "0 1 0 RG" },
                 { "0 0 1 rg", true, new float[] {0, 0, 1}, "0 0 1 rg" },

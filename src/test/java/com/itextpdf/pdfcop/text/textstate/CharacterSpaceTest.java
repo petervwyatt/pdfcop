@@ -54,7 +54,7 @@ public class CharacterSpaceTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 Tc", true, 0, "Tc" },
                 { "1 Tc", true, 1, "Tc" },

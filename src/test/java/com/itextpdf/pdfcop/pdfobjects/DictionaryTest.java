@@ -53,7 +53,7 @@ public class DictionaryTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "<</Key /Value>>", true, 4 },
                 { "<</Key/Value>>", true, 4 },

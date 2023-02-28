@@ -93,7 +93,7 @@ public class PdfCop {
             streamParser.removeErrorListeners();
             streamParser.addErrorListener(ThrowingErrorListener.INSTANCE);
 
-            streamParser.pageLevelObject();
+            streamParser.content_stream();
         }
 
         return true;
@@ -109,7 +109,7 @@ public class PdfCop {
         streamParser.removeErrorListeners();
         streamParser.addErrorListener(ThrowingErrorListener.INSTANCE);
 
-        streamParser.pageLevelObject();
+        streamParser.content_stream();
 
         return true;
     }

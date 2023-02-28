@@ -53,7 +53,7 @@ public class ArrayTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "[ 0 1 2 3 ]", true, 6 },
                 { "[ /Name (Abcde) <AABBCC001122> 3 ]", true, 6 },

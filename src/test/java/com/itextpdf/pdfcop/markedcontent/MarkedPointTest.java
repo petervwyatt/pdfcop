@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class MarkedPointTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "/TouchUp_TextEdit MP q Q", true, 3 }
         });

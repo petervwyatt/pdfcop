@@ -53,7 +53,7 @@ public class WordSpaceTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 Tw", true, 0, "Tw" },
                 { "1 Tw", true, 1, "Tw" },

@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class TextPositioningTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 0 Td", true, 1},
                 { "0 0 Td 0 0 TD", true, 2},

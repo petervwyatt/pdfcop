@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class ColorTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 g", true, 1},
                 { "0 g 0 G", true, 2},

@@ -40,7 +40,7 @@ import org.junit.runners.Parameterized;
 public class PageLevelObjectTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "/OC /Pr1 BDC\n" +
                         "BT\n" +
@@ -176,6 +176,6 @@ public class PageLevelObjectTest extends GroupingBaseTest {
 
     @Override
     public ParserRuleContext getContext(PdfStreamParser streamParser) {
-        return streamParser.pageLevelObject();
+        return streamParser.content_stream();
     }
 }

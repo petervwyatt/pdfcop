@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class SpecialGraphicsStateTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "q", true, 1},
                 { "q Q", true, 2},

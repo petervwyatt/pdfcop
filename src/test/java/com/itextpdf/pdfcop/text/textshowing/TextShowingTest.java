@@ -41,7 +41,7 @@ import org.junit.runners.Parameterized;
 public class TextShowingTest extends GroupingBaseTest {
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "() Tj", true, 1},
                 { "(Hello World) Tj", true, 1},

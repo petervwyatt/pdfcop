@@ -54,7 +54,7 @@ public class NumberArrayTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "[ 0 1 2 3 ]", true, new float[] {0f, 1f, 2f, 3f} }
 //                { "[ ]", true, new float[] {0f, 1f, 2f, 3f} }

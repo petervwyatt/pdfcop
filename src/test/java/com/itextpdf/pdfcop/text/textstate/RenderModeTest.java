@@ -54,7 +54,7 @@ public class RenderModeTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 Tr", true, 0, "Tr" },
                 { "1 Tr", true, 1, "Tr" },

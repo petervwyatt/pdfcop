@@ -54,7 +54,7 @@ public class LineJoinTest {
     public ExpectedException expectedException = ExpectedException.none();
 
     @Parameterized.Parameters
-    public static Collection data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 { "0 j", true, 0, "j" },
                 { "1 j", true, 1, "j" },
