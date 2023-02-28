@@ -34,6 +34,26 @@ You can also access the specific objects and their children through the generate
 
 Some versions of IntelliJ IDEA might not be able to find the generated sources after a build. To remediate this, right-click on the root in the Project View, open the `Maven` submenu and click `Generate Sources and Update Folders`
 
+## Command Line Usage
+
+The following Linux bash command can be used to visualize the parse of a PDF content stream. Enter the content stream and then press CTRL+D to parse:
+
+```bash
+antlr4-parse ./src/main/antlr4/com/itextpdf/antlr/PdfStream.g4 content_stream -tokens
+0 1%comment
+1 rg
+^D
+```
+
+Alternatively use the Linux bash `printf` command to more easily enter and confirm complex byte sequences before piping to `antlr4-parse`:
+
+```bash
+printf "0\n%%comment\r1\000 1 rg" | od -A n -w40 -v -t c
+printf "0\n%%comment\r1\000 1 rg" | od -A n -w40 -v -t x1
+printf "0\n%%comment\r1\000 1 rg" | antlr4-parse ./src/main/antlr4/com/itextpdf/antlr/PdfStream.g4 content_stream -trace -tokens
+```
+
+A Linux bash script `linux-antlr4-test/sh` is provided which reads individual lines of input from text files and runs each line through `antlr4-parse`. Note that the return code of PASS/FAIL reflects the ANTLR system and is **not** the validity of the PDF content stream! The token sequence needs to be examined to determine this (`-tokens`).
 
 ## Disclaimer
 
