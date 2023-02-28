@@ -1,0 +1,7 @@
+0 1 0 rg
+/Name Do
+0\n%%comment\r0.1\000 1.0 RG
+[(A(A)A)%%comment\r-12.3\000\f(BBB)]\tTJ
+(a\(bc) Tj
+BT q Q ET
+/tag\000<<\t/Key1\r/Value1\f/Key2[+.1[]-1/N]>>%%not /Name\rBDC EMC
